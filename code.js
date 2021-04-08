@@ -3,7 +3,7 @@ const autoHeight = () => {
   let sortArray = selectedItem.children;
 
   if (selectedItem.type !== "FRAME") {
-    figma.notify("not Frame");
+    figma.notify("🙌 Please select a Frame");
     figma.closePlugin();
   } else {
     let sortedArray = sortArray.slice().sort(function (a, b) {
@@ -19,14 +19,11 @@ const autoHeight = () => {
     );
 
     selectedItem.setRelaunchData({ open: "" });
-    figma.notify("👌");
     figma.closePlugin();
   }
 };
 
 autoHeight();
-
-console.log(figma);
 
 switch (figma.command) {
   case "open":
