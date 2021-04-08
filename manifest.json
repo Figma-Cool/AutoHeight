@@ -1,0 +1,9 @@
+{
+  "name": "AutoHeight",
+  "id": "961884764147998101",
+  "api": "1.0.0",
+  "main": "code.js",
+  "relaunchButtons": [
+    { "command": "open", "name": "Run AutoHeight", "multipleSelection": false }
+  ]
+}
